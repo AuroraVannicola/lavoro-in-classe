@@ -1,0 +1,13 @@
+from random import randint
+a = []
+c = 0
+for x in range(1000000):
+    b = randint(1,100)
+    a.append(b)
+for x in range(len(a)-2):
+    n1 = a[x]
+    n2 = a[x+1]
+    n3 = a[x+2]
+    if n1 == 1 and n2 == 2 and n3 == 3:
+        c += 1
+print(c)
